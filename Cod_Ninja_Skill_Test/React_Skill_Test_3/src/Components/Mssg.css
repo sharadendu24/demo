@@ -1,0 +1,27 @@
+.left{
+
+    width: fit-content;
+    background-color: rgb(245, 226, 220);
+    float: left;
+    margin: 5px;
+    border-radius: 5px;
+    margin-right: 100px;
+    opacity: 70%;
+    padding: 2px;
+}
+
+.right{
+
+    width: fit-content;
+    background-color: rgb(173, 241, 246);
+    text-align: right;
+    float: right;
+    margin: 5px;
+    border-radius: 5px;
+    margin-right: 0px;
+    right: 0px;
+    opacity: 70%;
+    padding: 2px;
+
+}
+

@@ -1,0 +1,58 @@
+.chatd{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: rgb(28,36,0);
+    background: linear-gradient(167deg, rgba(28,36,0,1) 0%, rgba(238,28,224,0.6906162123052346) 47%, rgba(0,255,143,1) 100%); 
+}
+
+.chat-top{
+
+    display: flex;
+    height: 60px;
+    background-color: rgb(37, 181, 183);
+    border-radius: 10px;
+
+}
+
+.chat{
+    height: 80%;
+    overflow-y: auto;
+    padding: 40px;;
+    padding-bottom: 100px;        
+
+}
+
+.mssg{
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    background-color: aliceblue;
+    height: 70px;
+    bottom: 0;
+    width: 100%;
+    border-radius: 40px;
+}
+
+textarea{
+    
+    width: 80%;
+    margin: 5px;
+    height: 80%;
+}
+
+button{
+    margin: 2%;
+    border: solid;
+    
+}
+
+h2{
+    font-weight: bold;
+}
+
+.outer{
+    margin: 1px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+}
