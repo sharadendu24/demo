@@ -1,0 +1,100 @@
+<head>
+    <style>
+        .createproject-form{
+            background-color: aqua;
+            height: 400px;
+            display: block;
+            padding-top: 5%;
+            margin-top: 2%;
+        }
+
+        input{
+            width: 80%;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 2%;
+            height: 40px;
+        }
+
+        label{
+            text-align: center;
+            display: block;
+            margin-bottom: 1%;
+        }
+
+        h2{
+            text-align: center;
+            background-color: rgb(99, 250, 129);
+            padding: 1%;
+            
+        }
+        
+        button{
+            margin: 2%;
+            background-color: greenyellow;
+            border-radius: 5px;
+            width: 10%;
+            height: 10%;
+        }
+
+        .clear{
+            background-color: rgb(248, 142, 22);
+        }
+
+        .back{
+            height: 5%;
+            width: 5%;
+            background-color: rgb(106, 165, 247);
+            float: left;
+            margin-bottom: 5%;
+        }
+        select{
+            height: 10%;
+            width: 10%;
+            background-color: rgb(252, 172, 233);
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+
+<h2>
+
+    <button class="back" onclick = "window.location.href='http://localhost:3000/details?id=<%=id%>'">back</button>
+
+    
+    
+
+    <br />
+
+    <div>
+        <form class="createproject-form" method="post">
+            <input type="hidden" name="id" value=<%=id%> >
+            <div><label>Titles </label><input type="text" name="Title" /></div>
+            <div><label>Description </label><input type="text" name="Description" /></div>
+            <div><label>Labels </label>   
+                <select id="label" name="label">
+                <option value="other">Other</option>
+                <option value="Issue1">Issue1</option>
+                <option value="Issue2">Issue2</option>
+                <option value="Issue3">Issue3</option>
+                <option value="Issue4">Issue4</option>
+                </select>
+            </div>
+
+            <button type="reset" class="clear">Clear</button>
+
+            <button type="submit">Create</button>
+            
+        </form>
+    </div>
+
+
+
+</h2>
+
+</body>

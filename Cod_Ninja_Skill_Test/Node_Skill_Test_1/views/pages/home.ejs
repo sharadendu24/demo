@@ -1,0 +1,77 @@
+<head>
+    <style>
+        button{
+            background-color: aquamarine;
+            border-radius: 5px;
+            width: 10%;
+            height: 10%;
+            margin: 1%;
+            float: right;
+        }
+
+
+        div{
+            display: block;
+            text-align: center;
+            background: rgb(34,193,195);
+            background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,45,45,1) 100%);
+        }
+
+        .issue{
+            background-color: rgb(255, 54, 54);
+        }
+
+        .project-div{
+            margin: 2%;
+            background-color: rgb(254, 254, 254);
+            width: 90%;
+            border-radius: 10px;
+            
+        }
+
+        p{
+            font-size: small;
+        }
+
+    </style>
+</head>
+
+
+<h1>
+    <div>
+
+
+    <h4>
+        This is Home page.
+    </h4>
+    
+
+    <button onclick = "window.location.href='http://localhost:3000/createproject'"> Create Project </button>
+
+    <br />
+
+    
+
+
+    <br />
+
+    
+
+    <ul>
+        <% for (var i = 0; i < a.length; i++) { %>
+            <div class="project-div" onclick = "window.location.href='http://localhost:3000/details?id=<%= a[i].Id %>'">   <%= a[i].Name %>  <p> <%= a[i].Author   %> </p>   </div>  
+        <% } %>
+    </ul>
+
+    <br />
+
+    
+
+    <br />
+
+    
+
+    </div>
+
+
+</h1>

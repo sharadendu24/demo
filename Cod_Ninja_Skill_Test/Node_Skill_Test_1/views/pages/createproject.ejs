@@ -1,0 +1,89 @@
+<head>
+    <style>
+        .createproject-form{
+            background-color: aqua;
+            height: 400px;
+            display: block;
+            padding-top: 5%;
+            margin-top: 2%;
+        }
+
+        input{
+            width: 80%;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 2%;
+            height: 40px;
+        }
+
+        label{
+            text-align: center;
+            display: block;
+            margin-bottom: 1%;
+        }
+
+        h2{
+            text-align: center;
+            background-color: rgb(99, 250, 129);
+            padding: 1%;
+            
+        }
+        
+        button{
+            margin: 2%;
+            background-color: greenyellow;
+            border-radius: 5px;
+            width: 10%;
+            height: 10%;
+        }
+
+        .clear{
+            background-color: rgb(248, 142, 22);
+        }
+
+        .back{
+            height: 5%;
+            width: 5%;
+            background-color: rgb(106, 165, 247);
+            float: left;
+            margin-bottom: 5%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+
+<h2>
+
+    <button class="back" onclick = "window.location.href='http://localhost:3000'">back</button>
+
+    Fill the details to create the Project.
+    
+    
+
+    <br />
+
+    <div>
+        <form class="createproject-form" id="form1" method="post" >
+            <label>Name </label><input type="text" name="Name" id="name" />
+
+            <label>Description </label><input type="text" name="Description" />
+
+            <label>Author </label><input type="text" name="Author" />
+
+            <button type="reset" class="clear">Clear</button>
+
+            <button type="submit"   >Create</button>
+            
+        </form>
+    </div>
+
+
+
+</h2>
+
+</body>

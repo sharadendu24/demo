@@ -1,0 +1,124 @@
+<head>
+    <style>
+        button{
+            background-color: rgb(255, 97, 97);
+            border-radius: 5px;
+            width: 10%;
+            height: 10%;
+            margin: 1%;
+            float: right;
+        }
+        #search{
+            float:none;
+            height: 6%;
+            width: 30%;
+            background-color: rgb(147, 255, 219);
+        }
+        #search-filter{
+            float:right;
+            height: 6%;
+            width: 15%;
+            background-color: rgb(147, 255, 219);
+        }
+
+        .filter{
+            float: right;
+        }
+
+        .main-body{
+
+            text-align: center;
+            background-color: rgb(255, 201, 196);
+
+        }
+
+        .search-form{
+            float: left;
+        }
+        
+    </style>
+</head>
+
+
+<body>
+    <h2></h2>
+
+    <form method="get" class="search-form" >
+
+        <input type="hidden" name="id" value=<%=data.o[0].Id%>>
+
+        <input type="text" name="search" placeholder="search by Title and description">
+
+        <button type="submit" id="search"> Search</button>
+
+    </form>
+
+
+    <form method="get" class="filter">
+
+        <input type="hidden" name="id" value=<%=data.o[0].Id%>>
+
+        <input type="checkbox" name="label" value="Issue1"> <label>Issue1</label>
+        <input type="checkbox" name="label" value="Issue2"> <label>Issue2</label>
+        <input type="checkbox" name="label" value="Issue3"> <label>Issue3</label>
+        <input type="checkbox" name="label" value="Issue4"> <label>Issue4</label>
+        <input type="checkbox" name="label" value="other"> <label>other</label>
+
+        <input type="text" name="author" placeholder="Author">
+
+
+
+        
+        <br />
+        <button type="submit" id="search-filter"> Filter</button>
+
+    </form>
+
+    <br />
+    <br />
+    <br />
+
+    <br />
+    <br />
+
+    
+
+
+
+
+    <button class="issue" onclick = "window.location.href='http://localhost:3000/createissue?id=<%= data.o[0].Id %>'"> Create Issue </button>
+
+<div class="main-body">
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1><%= data.o[0].Name%></h1>
+    <p><h3>Description: </h3><br /> <%= data.o[0].Description%></p>
+    <h1> <h3>Author :</h3> <%= data.o[0].Author%></h1>
+
+    <br />
+
+    
+    <h2 style="text-align: center; background-color: rgb(233, 170, 247); padding: 2%;"> These are the Issues</h2>
+
+    <div style="border-radius: 10px; background-color: rgb(250, 242, 151);">
+    
+    <ul>
+        <% for (var i = 0; i < data.issue.length; i++) { %>
+            <div class="project-div" >   Issue ID: <%= data.issue[i].IssueId %>  <p> Label: <%= data.issue[i].Labels   %> </p>  <p> Title: <%= data.issue[i].Title   %> </p>   <p> Description: <%= data.issue[i].Description   %> </p>   </div>  
+            <h4>-------------------------------------------------------------------------------------------------</h4>
+        <% } %>
+    </ul>
+
+    </div>
+        
+</div>
+
+
+
+
+</body>
