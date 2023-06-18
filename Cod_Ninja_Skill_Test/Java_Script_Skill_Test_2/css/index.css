@@ -1,0 +1,23 @@
+
+
+
+.search-section,
+.fav-section,
+.about-sec {
+  background: #dae5ff;
+}
+.search-container {
+  width: 500px !important;
+  padding: 50px;
+}
+
+.result-section {
+  background-color: #7e7eb0;
+}
+.result-section h2 {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+
+
