@@ -52,8 +52,6 @@ app.post('/doctors/register', async (req, res) => {
   try {
     const { username, password } = req.body;
 
-    console.log(req.body);
-
     // Check if username already exists
     const existingUser = await db.collection('doctors').findOne({ username });
     if (existingUser) {
@@ -265,7 +263,6 @@ app.get('/reports/:status', authenticateToken, async(req, res) => {
 
   //const to store search key..
   const status=req.params.status
-  console.log(req.user);
 
   // Get the collection where documents are stored
   const collection = db.collection('patients');
@@ -278,7 +275,6 @@ app.get('/reports/:status', authenticateToken, async(req, res) => {
   //method to itterate over the patient array and store it into the array to be sent over http protocol in json format
   patient.map(function(item) {
     
-    console.log(item);
     records=[...records,...item.report.filter(function(item){ if(item.status==status) return item; })];
    
   });
