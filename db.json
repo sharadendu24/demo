@@ -1,0 +1,42 @@
+[
+    {
+        "id":"1",
+        "name":"Red Seat",
+        "image-link":"https://images.unsplash.com/photo-1570198561490-40196f287d94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVkJTIwc29mYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
+        "price":"4000",
+        "color":"red",
+        "Description":"This is the decription for the product"
+    },
+    {
+        "id":"2",
+        "name":"Office Seat",
+        "image-link":"https://images.unsplash.com/photo-1570198561490-40196f287d94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVkJTIwc29mYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
+        "price":"6000",
+        "color":"blue",
+        "Description":"This is the decription for the product"
+    },
+    {
+        "id":"3",
+        "name":"Basketball",
+        "image-link":"https://images.unsplash.com/photo-1570198561490-40196f287d94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVkJTIwc29mYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
+        "price":"1600",
+        "color":"red",
+        "Description":"This is the decription for the product"
+    },
+    {
+        "id":"4",
+        "name":"Basketball Shoes",
+        "image-link":"https://images.unsplash.com/photo-1570198561490-40196f287d94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVkJTIwc29mYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
+        "price":"8000",
+        "color":"black",
+        "Description":"This is the decription for the product"
+    },
+    {
+        "id":"5",
+        "name":"Basketball Jersey",
+        "image-link":"https://images.unsplash.com/photo-1570198561490-40196f287d94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVkJTIwc29mYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
+        "price":"6000",
+        "color":"yellow",
+        "Description":"This is the decription for the product"
+    }
+]
